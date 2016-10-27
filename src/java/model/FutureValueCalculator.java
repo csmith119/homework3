@@ -7,10 +7,15 @@ Campus Box 7947, Elon University, Elon, NC 27244
 */
 package model;
 
-/**
- *
- * @author csmith119
- */
 public class FutureValueCalculator {
     
+    public static double findFutureValue (double investmentAmount, 
+            double yearlyInterestRate, int numberOfYears) {
+        double annualInterstRate = yearlyInterestRate/100;
+        double futureValue = investmentAmount * (1 + (yearlyInterestRate));
+        futureValue = Math.pow(futureValue, numberOfYears);
+        return futureValue;
+    }
+    
 }
+
