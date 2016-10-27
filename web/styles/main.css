@@ -1,0 +1,41 @@
+/*
+Copyright (c) 2016 Christy Smith
+Campus Box 7915, Elon University, Elon, NC 27244
+
+Copyright (c) 2016 Evan Elkin
+Campus Box 7947, Elon University, Elon, NC 27244
+*/
+h1 {  
+    color:blue;   
+    font-family:Arial, sans-serif;
+    font-size:130%;
+    margin-bottom:1em;    
+}
+p {
+    color:black;
+    font-family:Arial, sans-serif;
+    font-size:100%;
+}
+label {
+    float:left;
+    font-size:100%;
+    font-weight:bold;
+    width:6em;
+}
+input {
+    margin-left:.5em;
+    width:14.5em;
+}
+span {
+    font-size:100%;
+    margin-left:.5em;
+}
+footer {
+    border:1px solid blue;
+    font-size:100%;
+    padding:1em;
+}
+.wrapper {
+    border:1px solid blue;
+    padding:1em;
+}
