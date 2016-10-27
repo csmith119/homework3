@@ -18,11 +18,10 @@ Campus Box 7947, Elon University, Elon, NC 27244
         <servlet-name>HomeworkServlet</servlet-name>
         <url-pattern>/calculate</url-pattern>
     </servlet-mapping>
-    <!--
     <error-page>
         <error-code>404</error-code>
         <location>/error.jsp</location>
-        </error-page> -->
+        </error-page> 
     <session-config>
         <session-timeout>
             30

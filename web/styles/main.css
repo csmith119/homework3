@@ -5,37 +5,68 @@ Campus Box 7915, Elon University, Elon, NC 27244
 Copyright (c) 2016 Evan Elkin
 Campus Box 7947, Elon University, Elon, NC 27244
 */
-h1 {  
-    color:blue;   
+body {
+    margin: 0 auto;
+    padding:1em;
+    width:80%;
+}
+.wrapper{
+   border:2px solid #0C1F80; 
+   border-bottom: none;
+}
+h1 { 
+    color:#0C1F80;   
     font-family:Arial, sans-serif;
-    font-size:130%;
-    margin-bottom:1em;    
+    font-size:145%;
+    font-weight:bold;
+    margin-bottom:1em;
+    padding-top: .5em;
+    padding-left:.5em;    
 }
 p {
     color:black;
+    display:inline-block;
     font-family:Arial, sans-serif;
     font-size:100%;
+    margin-left: 3em;
+    padding-bottom: .5em;
 }
 label {
     float:left;
+    font-family: Arial, sans-serif;
     font-size:100%;
-    font-weight:bold;
-    width:6em;
+    text-align:right;
+    width:10em;
 }
 input {
+    margin-bottom: .5em;
     margin-left:.5em;
-    width:14.5em;
+    width:18em;
 }
+
 span {
     font-size:100%;
     margin-left:.5em;
 }
-footer {
-    border:1px solid blue;
-    font-size:100%;
-    padding:1em;
+br{
+    clear: both;
 }
-.wrapper {
-    border:1px solid blue;
-    padding:1em;
+
+footer {
+    border:2px solid #0C1F80;
+    padding: .5em;
+    font-size:100%;
+}
+.inputField{
+    margin: 0 auto;
+    padding-bottom: .5em;
+    width: 24em;
+}
+
+.button{
+    background-color:lightgrey;
+    border: 1px solid black;
+    height: 2em;
+    margin-left:15em;
+    width: 7em;
 }
