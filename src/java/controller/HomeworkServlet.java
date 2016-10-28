@@ -21,46 +21,46 @@ public class HomeworkServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, 
-            HttpServletResponse response)
-            throws ServletException, IOException {
+      HttpServletResponse response)
+        throws ServletException, IOException {
         
-        String url = "/index.jsp";
+      String url = "/index.jsp";
         
-        String action = request.getParameter("action");
+      String action = request.getParameter("action");
         
-        if (action == null) {
-            action = "join";
-        }
+      if (action == null) {
+        action = "join";
+      }
         
-        if (action.equals("join")) {
-            url = "/index.jsp";
-        }
-        else if (action.equals("add")) {
-            String amount = request.getParameter("amount");
-            String rate = request.getParameter("rate");
-            String years = request.getParameter("years");
-            double investmentAmount = Integer.parseInt(amount);
-            double yearlyInterestRate = Integer.parseInt(rate);
-            int numberOfYears = Integer.parseInt(years);
-            double futureValue = 
-                    FutureValueCalculator.findFutureValue(investmentAmount, 
-                            yearlyInterestRate, numberOfYears);
+      if (action.equals("join")) {
+        url = "/index.jsp";
+      }
+      else if (action.equals("add")) {
+        String amount = request.getParameter("amount");
+        String rate = request.getParameter("rate");
+        String years = request.getParameter("years");
+        double investmentAmount = Integer.parseInt(amount);
+        double yearlyInterestRate = Integer.parseInt(rate);
+        int numberOfYears = Integer.parseInt(years);
+        double futureValue = 
+          FutureValueCalculator.findFutureValue(investmentAmount, 
+            yearlyInterestRate, numberOfYears);
             
-            Calculator calculator = new Calculator(investmentAmount,
-                    yearlyInterestRate, numberOfYears, futureValue);
+        Calculator calculator = new Calculator(investmentAmount,
+          yearlyInterestRate, numberOfYears, futureValue);
             
-            request.setAttribute("calculator", calculator);
-            url = "/thanks.jsp";
+        request.setAttribute("calculator", calculator);
+        url = "/thanks.jsp";
         }
         
-        getServletContext().getRequestDispatcher(url)
-                .forward(request, response);
+      getServletContext().getRequestDispatcher(url)
+        .forward(request, response);
     }
 
     @Override
     protected void doGet(HttpServletRequest request, 
-            HttpServletResponse response)
-            throws ServletException, IOException {
+      HttpServletResponse response)
+        throws ServletException, IOException {
         doPost(request, response);
     }
 

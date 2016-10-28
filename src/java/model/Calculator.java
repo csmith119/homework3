@@ -11,67 +11,65 @@ import java.io.Serializable;
 import java.text.NumberFormat;
 
 public class Calculator implements Serializable {
-    private String investmentAmount;
-    private String yearlyInterestRate;
-    private String numberOfYears;
-    private String futureValue;
+  private String investmentAmount;
+  private String yearlyInterestRate;
+  private String numberOfYears;
+  private String futureValue;
     
-    public Calculator() {
-        investmentAmount = "";
-        yearlyInterestRate = "";
-        numberOfYears = "";
-        futureValue = "";
-    }
+  public Calculator() {
+    investmentAmount = "";
+    yearlyInterestRate = "";
+    numberOfYears = "";
+    futureValue = "";
+  }
     
-    public Calculator(double investmentAmount, double yearlyInterestRate, 
-            int numberOfYears, double futureValue) {
-        NumberFormat formatter = NumberFormat.getCurrencyInstance();
-        //formats investment amount to currency format
-        String formattedInvestmentAmount = formatter.format(investmentAmount);
-        this.investmentAmount = formattedInvestmentAmount;
-        
-        this.yearlyInterestRate = yearlyInterestRate+"";
-        this.numberOfYears = numberOfYears+"";
-        
-        //formats future value amount to currency format
-        String formattedFutureValue = formatter.format(futureValue);
-        this.futureValue = formattedFutureValue;
+  public Calculator(double investmentAmount, double yearlyInterestRate, 
+    int numberOfYears, double futureValue) {
+    NumberFormat formatter = NumberFormat.getCurrencyInstance();
+    //formats investment amount to currency format
+    String formattedInvestmentAmount = formatter.format(investmentAmount);
+    this.investmentAmount = formattedInvestmentAmount;
+    this.yearlyInterestRate = yearlyInterestRate+"";
+    this.numberOfYears = numberOfYears+"";
+    //formats future value amount to currency format
+    String formattedFutureValue = formatter.format(futureValue);
+     this.futureValue = formattedFutureValue;
     }
     
     public String getInvestmentAmount() {
-        return investmentAmount;
+      return investmentAmount;
     }
     
     public void setInvestmentAmount(double investmentAmount) {
-        NumberFormat formatter = NumberFormat.getCurrencyInstance();
-        String formattedAmount = formatter.format(investmentAmount);
-        this.investmentAmount = formattedAmount;
+      NumberFormat formatter = NumberFormat.getCurrencyInstance();
+      String formattedAmount = formatter.format(investmentAmount);
+      this.investmentAmount = formattedAmount;
     }
     
     public String getYearlyInterestRate() {
-        return yearlyInterestRate;
+      return yearlyInterestRate;
     }
     
     public void setYearlyInterestRate(double yearlyInterestRate) {
-        this.yearlyInterestRate = yearlyInterestRate+"";
+      this.yearlyInterestRate = yearlyInterestRate+"";
     }
     
     public String getNumberOfYears() {
-        return numberOfYears;
+      return numberOfYears;
     }
     
     public void setNumberOfYears(int numberOfYears) {
-        this.numberOfYears = numberOfYears+"";
+      this.numberOfYears = numberOfYears+"";
     }
     
     public String getFutureValue() {
-        return futureValue;
+      return futureValue;
     }
     
     public void setFutureValue(double futureValue) {
-        NumberFormat formatter = NumberFormat.getCurrencyInstance();
-        String formattedAmount = formatter.format(futureValue);
-        this.futureValue = formattedAmount;
+      NumberFormat formatter = NumberFormat.getCurrencyInstance();
+      String formattedAmount = formatter.format(futureValue);
+      this.futureValue = formattedAmount;
     }
     
 }

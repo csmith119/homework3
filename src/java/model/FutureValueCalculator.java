@@ -10,8 +10,8 @@ package model;
 public class FutureValueCalculator {
     
     public static double findFutureValue (double investmentAmount, 
-            double yearlyInterestRate, int numberOfYears) {
-        return investmentAmount * Math.pow(1 + yearlyInterestRate / 100, numberOfYears);
+      double yearlyInterestRate, int numberOfYears) {
+      return investmentAmount * Math.pow(1 + yearlyInterestRate / 100, numberOfYears);
     }
     
 }
