@@ -4,6 +4,9 @@ Campus Box 7915, Elon University, Elon, NC 27244
 
 Copyright (c) 2016 Evan Elkin
 Campus Box 7947, Elon University, Elon, NC 27244
+
+Copyright (c) 2016 Charles Kim
+Campus Box 8462, Elon University, Elon, NC 27244
 */
 /* 
 Laptop View and style for all pages 
@@ -53,11 +56,11 @@ span {
   margin-left: .5em;
 }
 
-br{
+br {
   clear: both;
 }
 
-table{
+table {
   margin-left: 1.25em;  
   text-align: left;
 }
@@ -68,11 +71,11 @@ footer {
   font-size: 100%;
 }
 
-.column2{
-  margin-left:4em;
+.column2 {
+  margin-left: 4em;
 }
 
-.count{
+.count {
   text-align: right;
 }
 
@@ -92,17 +95,17 @@ footer {
 /*Code for mobile view across all pages*/
 @media all and (max-width: 400px) {
     
-  label{
-   font-size: 80%;
-   text-align: left;
+  label {
+    font-size: 80%;
+    text-align: left;
   }
   
-  span{
-   font-size: 80%;
+  span {
+    font-size: 80%;
   }
   
-  table{
-   font-size: 80%;
+  table {
+    font-size: 80%;
   }
   
   input {

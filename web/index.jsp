@@ -24,7 +24,7 @@ Servlet--%>
     <div class="inputField">
       <label class="entry">Number of Years:</label>
       <input class="retrieve" type="number" min="0" step="1" name="years" 
-           placeholder="Integer number of years" required><br> 
+          placeholder="Integer number of years" required><br> 
     </div>
     <div class="inputField">
     <input class= "button" type="submit" value="Calculate">

@@ -19,7 +19,7 @@ Servlet--%>
     <div class="inputField">
       <label>Investment Amount:</label>
       <span><elon:currencyFormat>${calculator[0].investmentAmount}
-          </elon:currencyFormat> </span><br>
+        </elon:currencyFormat> </span><br>
     </div>
     <div class="inputField">
       <label>Yearly Interest Rate:</label>
