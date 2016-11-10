@@ -23,6 +23,7 @@ h1 {
   color: #0C1F80;   
   font: bold 145% Arial, sans-serif;
   margin-bottom: 1em;
+  margin-left:.5em;
   padding: .5em .5em 0;  
 }
 
@@ -37,8 +38,8 @@ p {
 label {
   float: left;
   font: 100% Arial, sans-serif;
-  text-align: right;
-  width: 10em;
+  margin-left:1.25em;
+  text-align: left;
 }
 
 input {
@@ -52,7 +53,11 @@ span {
 }
 
 br{
-    clear: both;
+  clear: both;
+}
+
+table{
+  margin-left: 1.25em;  
 }
 
 footer {
@@ -76,15 +81,34 @@ footer {
 }
 /*Code for mobile view across all pages*/
 @media all and (max-width: 400px) {
+    
+  label{
+   font-size: 80%;
+   width: 8em;
+  }
+  
+  span{
+   font-size: 80%;
+  }
+  
+  table{
+   font-size: 80%;
+  }
+  
   input {
     height: 3em;
-    width: 18em;
+    width: 12em;
     margin-left: 3em; 
+  }
+  
+  footer{
+    font-size: 60%;
   }
   
   .entry {
     text-align: left;
     margin-left: 2em;
+    width: 15em;
   }
   
   .button {
@@ -94,5 +118,6 @@ footer {
   
   #thanksTitle {
     font-size: 100%;
+    width: 10em;
   }  
 }
