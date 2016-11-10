@@ -39,7 +39,8 @@ label {
   float: left;
   font: 100% Arial, sans-serif;
   margin-left:1.25em;
-  text-align: left;
+  text-align: right;
+  width: 10em;
 }
 
 input {
@@ -58,12 +59,21 @@ br{
 
 table{
   margin-left: 1.25em;  
+  text-align: left;
 }
 
 footer {
   border: 2px solid #0C1F80;
   padding: .25em;
   font-size: 100%;
+}
+
+.column2{
+  margin-left:4em;
+}
+
+.count{
+  text-align: right;
 }
 
 .inputField {
@@ -76,7 +86,7 @@ footer {
   background-color: lightgrey;
   border: 1px solid black;
   height: 2em;
-  margin-left: 15em;
+  margin-left: 17em;
   width: 7em;
 }
 /*Code for mobile view across all pages*/
@@ -84,7 +94,7 @@ footer {
     
   label{
    font-size: 80%;
-   width: 8em;
+   text-align: left;
   }
   
   span{
@@ -96,7 +106,7 @@ footer {
   }
   
   input {
-    height: 3em;
+    height: 2em;
     width: 12em;
     margin-left: 3em; 
   }
@@ -107,8 +117,8 @@ footer {
   
   .entry {
     text-align: left;
-    margin-left: 2em;
-    width: 15em;
+    margin-left: 2.6em;
+    width: 100%;
   }
   
   .button {

@@ -14,15 +14,15 @@ Servlet--%>
   <form action="calculate" method="post">
     <input type="hidden" name="action" value="add"> 
     <div class="inputField">
-      <label class="entry">Investment Amount</label>
+      <label class="entry">Investment Amount:</label>
       <input class="retrieve" type="number" min="0" name="amount" required><br>
     </div>
     <div class="inputField">
-      <label class="entry">Yearly Interest Rate</label>
+      <label class="entry">Yearly Interest Rate:</label>
       <input class="retrieve" type="number" min="0" name="rate" required><br>
     </div>
     <div class="inputField">
-      <label class="entry">Number of Years</label>
+      <label class="entry">Number of Years:</label>
       <input class="retrieve" type="number" min="0" step="1" name="years" 
            placeholder="Integer number of years" required><br> 
     </div>

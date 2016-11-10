@@ -33,12 +33,14 @@ Servlet--%>
       <table>
         <tr>
           <th>Year</th>
-          <th>Value</th>
+          <th><div class="column2">Value</div></th>
         </tr>
         <c:forEach var="c" items="${calculator}" begin="0" end="10" step="1" varStatus="status">      
           <tr>
-            <td><c:out value="${status.count}" /> </td>
-            <td><elon:currencyFormat><c:out value="${c.futureValue}"/></elon:currencyFormat></td>
+            <td><div class="count"><c:out value="${status.count}" /> </div></td>
+            <td><div class="column2"><elon:currencyFormat>
+                    <c:out value="${c.futureValue}"/></elon:currencyFormat>
+                </div></td>
           </tr>
         </c:forEach>  
       </table>
