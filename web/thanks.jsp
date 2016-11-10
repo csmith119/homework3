@@ -35,7 +35,7 @@ Servlet--%>
           <th>Year</th>
           <th><div class="column2">Value</div></th>
         </tr>
-        <c:forEach var="c" items="${calculator}" begin="0" end="10" step="1" varStatus="status">      
+        <c:forEach var="c" items="${calculator}" varStatus="status">      
           <tr>
             <td><div class="count"><c:out value="${status.count}" /> </div></td>
             <td><div class="column2"><elon:currencyFormat>
