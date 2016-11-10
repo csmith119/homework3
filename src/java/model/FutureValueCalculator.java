@@ -8,10 +8,9 @@ Campus Box 7947, Elon University, Elon, NC 27244
 package model;
 
 public class FutureValueCalculator {
-    
     public static double findFutureValue (double investmentAmount, 
       double yearlyInterestRate, int numberOfYears) {
-      return investmentAmount * Math.pow(1 + yearlyInterestRate / 100, 
+        return investmentAmount * Math.pow(1 + yearlyInterestRate / 100, 
               numberOfYears);
     }
     

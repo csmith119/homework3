@@ -12,6 +12,7 @@ Campus Box 8462, Elon University, Elon, NC 27244
 package model;
 
 import java.io.Serializable;
+import java.util.Arrays;
 
 public class Calculator implements Serializable {
   private String investmentAmount;
