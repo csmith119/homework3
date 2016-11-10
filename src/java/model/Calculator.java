@@ -4,11 +4,14 @@ Campus Box 7915, Elon University, Elon, NC 27244
 
 Copyright (c) 2016 Evan Elkin
 Campus Box 7947, Elon University, Elon, NC 27244
+
+Copyright (c) 2016 Charles Kim
+Campus Box 8462, Elon University, Elon, NC 27244
+
 */
 package model;
 
 import java.io.Serializable;
-import java.text.NumberFormat;
 
 public class Calculator implements Serializable {
   private String investmentAmount;
@@ -25,15 +28,11 @@ public class Calculator implements Serializable {
     
   public Calculator(double investmentAmount, double yearlyInterestRate, 
     int numberOfYears, double futureValue) {
-    NumberFormat formatter = NumberFormat.getCurrencyInstance();
-    //formats investment amount to currency format
-    String formattedInvestmentAmount = formatter.format(investmentAmount);
-    this.investmentAmount = formattedInvestmentAmount;
+  
+    this.investmentAmount = investmentAmount +"";
     this.yearlyInterestRate = yearlyInterestRate+"";
     this.numberOfYears = numberOfYears+"";
-    //formats future value amount to currency format
-    String formattedFutureValue = formatter.format(futureValue);
-     this.futureValue = formattedFutureValue;
+    this.futureValue = futureValue+ "";
     }
     
     public String getInvestmentAmount() {
@@ -41,9 +40,7 @@ public class Calculator implements Serializable {
     }
     
     public void setInvestmentAmount(double investmentAmount) {
-      NumberFormat formatter = NumberFormat.getCurrencyInstance();
-      String formattedAmount = formatter.format(investmentAmount);
-      this.investmentAmount = formattedAmount;
+      this.investmentAmount = investmentAmount + "";
     }
     
     public String getYearlyInterestRate() {
@@ -67,9 +64,7 @@ public class Calculator implements Serializable {
     }
     
     public void setFutureValue(double futureValue) {
-      NumberFormat formatter = NumberFormat.getCurrencyInstance();
-      String formattedAmount = formatter.format(futureValue);
-      this.futureValue = formattedAmount;
+      this.futureValue = futureValue + "";
     }
     
 }

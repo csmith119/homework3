@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (c) 2016 Christy Smith
+Campus Box 7915, Elon University, Elon, NC 27244
+
+Copyright (c) 2016 Charles Kim
+Campus Box 8462, Elon University, Elon, NC 27244
+ -->
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+  <tlib-version>1.0</tlib-version>
+  <short-name>elon</short-name>
+  <uri>/WEB-INF/tlds/elon</uri>
+  <info> a custom tag library for homework3 </info> 
+  <tag>
+        <name>currencyFormat</name>
+        <tagclass>tags.currencyFormat</tagclass>
+        <info>Formats doubles to have a dollar sign, appropriate commas and 
+            two decimal places</info>
+    </tag>
+</taglib>

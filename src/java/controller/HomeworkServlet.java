@@ -39,8 +39,8 @@ public class HomeworkServlet extends HttpServlet {
         String amount = request.getParameter("amount");
         String rate = request.getParameter("rate");
         String years = request.getParameter("years");
-        double investmentAmount = Integer.parseInt(amount);
-        double yearlyInterestRate = Integer.parseInt(rate);
+        double investmentAmount = Double.parseDouble(amount);
+        double yearlyInterestRate = Double.parseDouble(rate);
         int numberOfYears = Integer.parseInt(years);
         double futureValue = 
           FutureValueCalculator.findFutureValue(investmentAmount, 
