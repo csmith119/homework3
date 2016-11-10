@@ -1,3 +1,4 @@
+<%@ include file="/includes/header.html" %>
 <!--
 Copyright (c) 2016 Christy Smith
 Campus Box 7915, Elon University, Elon, NC 27244
@@ -5,7 +6,6 @@ Campus Box 7915, Elon University, Elon, NC 27244
 Copyright (c) 2016 Evan Elkin
 Campus Box 7947, Elon University, Elon, NC 27244
 -->
-<%@ include file="/includes/header.html" %>
 <jsp:useBean id="calculator" class="model.Calculator" scope="request"/>
     <div class="wrapper"> <!--Wrapper for border-->
     <!-- Displays collected info and calculation after going through Homework
