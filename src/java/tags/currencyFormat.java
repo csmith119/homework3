@@ -12,22 +12,21 @@ import java.text.NumberFormat;
 import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.tagext.BodyTagSupport;
 
-
 public class currencyFormat extends BodyTagSupport {
-   NumberFormat formatter = NumberFormat.getCurrencyInstance();
-    
-    @Override
-    public int doAfterBody() {
-        try {
-          String bodyString = bodyContent.getString();
-          Double bodyValue = Double.parseDouble(bodyString);
-          JspWriter out = bodyContent.getEnclosingWriter();
-          out.print(formatter.format(bodyValue));
-        } 
-        catch (IOException e) {
-          System.err.println("error in doAfterBody" + e.getMessage());
-        }
-        return SKIP_BODY;
+
+  NumberFormat formatter = NumberFormat.getCurrencyInstance();
+
+  @Override
+  public int doAfterBody() {
+    try {
+      String bodyString = bodyContent.getString();
+      Double bodyValue = Double.parseDouble(bodyString);
+      JspWriter out = bodyContent.getEnclosingWriter();
+      out.print(formatter.format(bodyValue));
+    } catch (IOException e) {
+      System.err.println("error in doAfterBody" + e.getMessage());
     }
+    return SKIP_BODY;
+  }
 
 }

@@ -15,20 +15,22 @@ Servlet--%>
     <input type="hidden" name="action" value="add"> 
     <div class="inputField">
       <label class="entry">Investment Amount:</label>
-      <input class="retrieve" type="number" min="0" name="amount" required><br>
+      <input class="retrieve" type="number" min="0" name="amount" 
+             value="${sessionScope.calculator.investmentAmount}" required><br>
     </div>
     <div class="inputField">
       <label class="entry">Yearly Interest Rate:</label>
-      <input class="retrieve" type="number" min="0" name="rate" required><br>
+      <input class="retrieve" type="number" min="0" name="rate" 
+             value="${sessionScope.calculator.yearlyInterestRate}" required><br>
     </div>
     <div class="inputField">
       <label class="entry">Number of Years:</label>
       <input class="retrieve" type="number" min="0" step="1" name="years" 
-          placeholder="Integer number of years" required><br> 
+             placeholder="Integer number of years" required><br> 
     </div>
     <div class="inputField">
-    <input class= "button" type="submit" value="Calculate">
+      <input class= "button" type="submit" value="Calculate">
     </div>
-    </form>
+  </form>
 </div>
 <%@ include file="/includes/footer.html" %>

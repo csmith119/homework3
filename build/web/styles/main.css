@@ -92,6 +92,15 @@ footer {
   margin-left: 17em;
   width: 7em;
 }
+
+.return {
+  font: 100% Arial, sans-serif;
+  margin: 0 auto;
+  padding-bottom: 1em;
+  width: 22em;
+  padding-left: 2em;
+}
+
 /*Code for mobile view across all pages*/
 @media all and (max-width: 400px) {
     
@@ -127,6 +136,14 @@ footer {
   .button {
     height: 3em;
     margin-left: 3em;
+  }
+  
+  .return {
+    font-size: 80%;
+    margin: 0 auto;
+    padding-bottom: 1em;
+    width: 22em;
+    padding-left: 2em;
   }
   
   #thanksTitle {
