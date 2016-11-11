@@ -60,6 +60,10 @@ public class HomeworkServlet extends HttpServlet {
       request.setAttribute("calculator", list);
 
       HttpSession session = request.getSession();
+      String saveAmount = request.getParameter("amount");
+      String saveRate = request.getParameter("rate");
+      session.setAttribute("amount", saveAmount);
+      session.setAttribute("rate", saveRate);
 
       url = "/thanks.jsp";
     }

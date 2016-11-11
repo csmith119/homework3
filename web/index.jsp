@@ -5,6 +5,9 @@ Campus Box 7915, Elon University, Elon, NC 27244
 
 Copyright (c) 2016 Evan Elkin
 Campus Box 7947, Elon University, Elon, NC 27244
+
+Copyright (c) 2016 Charles Kim
+Campus Box 8462, Elon University, Elon, NC 27244
 --%>
 
 <div class="wrapper"> <!--Wrapper for border-->
@@ -16,12 +19,12 @@ Servlet--%>
     <div class="inputField">
       <label class="entry">Investment Amount:</label>
       <input class="retrieve" type="number" min="0" name="amount" 
-             value="${sessionScope.calculator.investmentAmount}" required><br>
+             value="${amount}" required><br>
     </div>
     <div class="inputField">
       <label class="entry">Yearly Interest Rate:</label>
       <input class="retrieve" type="number" min="0" name="rate" 
-             value="${sessionScope.calculator.yearlyInterestRate}" required><br>
+             value="${rate}" required><br>
     </div>
     <div class="inputField">
       <label class="entry">Number of Years:</label>
